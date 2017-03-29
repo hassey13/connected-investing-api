@@ -1,24 +1,6 @@
-# :)
+# connected-investing
+API for a social media site for users to share what stocks they follow and their opinions on individual stocks.  Users can follow each other, follow stocks, see basic stock financial data, see what stocks people are following, like/ dislike, recommend stocks, and comment on stocks.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In Beta* Host location coming soon.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Coming soon, ability to have an investing simulator with funds where you can buy and sell shares to see how you may fare in the real market.
