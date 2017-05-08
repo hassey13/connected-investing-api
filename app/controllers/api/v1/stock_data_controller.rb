@@ -9,8 +9,14 @@ class Api::V1::StockDataController < ApplicationController
     @stock = Stock.find_by(ticker: query)
     if @stock && should_api_be_called?
         # => API INTRINO
-      date = Date.today.to_s(:db)
-      date = "2017-03-27"
+      date = Date.today
+
+        # => Find yesterday and skip weekends
+      while (date.wday % 7 == 0) or (date.wday % 7 == 6) do
+        date -= 1
+      end
+      date = date.to_s
+
       url = "https://api.intrinio.com/prices?ticker=#{@stock.ticker}&start_date=#{date}&end_date=#{date}"
 
       response = api_call(url)
